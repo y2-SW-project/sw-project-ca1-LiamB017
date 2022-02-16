@@ -1,8 +1,16 @@
 
+
+
+
+
+
+
+
+
 Title of project
 
-Liam Bedford
-Student Number N00202070
+Your name Briain Smith
+Your student number n00123456
 
 Software Project
 CA 2 – Develop a PHP shopping cart website
@@ -109,24 +117,31 @@ Reflection
 2	Business Concept
 
 2.1	Business Idea
-Describe the business idea of your project.
+My business idea is a shopping website that allows users to put
+ up kickboxing boxing gear for sale and allows other users to view and purchase these products.
 
 
 2.2	Business model 
- 
+The business will make money by advertising on the website
+while also taking 10% of the cost of an item when an item is sold on the website.
 
 
 2.3	Market Research
 Market for Product/Service
+The target market consists of people of all ages who kickbox. They will buy products as they are cheaper than buying brand new products from other sources.
+ I think there is definitely a big enough market to support and sustain this product for a long time.
 
-Customers - Demographics, Profile
-
+ Customers - Demographics, Profile
+ The service focuses on people who train at kickboxing and who need new training gear,
+  whether they are beginners, amateurs, or fighters.
 
 2.4	Marketing/Advertising
 
 2.5	Suppliers
 
 2.6	Competitors
+Competitors in the same space are sites like ebay,amazon or craigslist. Weaknesses of these competitors is that they are not specific to  used Muay Thai Training gear. They sell a more larger base of products at higher costs. 
+These sites all allow users to put products up for sale and allows them to purchase products.
 
 2.7	Employees
 
@@ -174,10 +189,28 @@ Delete the following diagram and insert your diagram.  Use draw.io
 3.4	Feasibility
 
 This section describes which technologies are planned to be used in the development of the application.  It then explains if there are any issues in terms of the technical feasibility of the project, for example, if there are two different types of software which may have compatibility issues. 
-4	Database Design 
-4.1	Description
+4	Web application Design
+4.1	Layout
+Describe the layout  of your web application. Does this depend on a framework like bootstrap? Is it repsonsive?
+4.2	Interaction
+What are the navigation elements, form elements. How does the user interact with the application?
+4.3	Colour schemes
+Describe the colour palette that you will use consistently across the web application
+
+4.4	Font choices
+Specify the fonts that you will use for different types of text. Include samples for paragraph text, headings and bold and italicised text.
+
+4.5	Wireframes
+Describe how to navigate from one page to the next by adding an diagram of the different screens and what the main functionality is.
+
+ 
+
+
+ 
+5	Database Design 
+5.1	Description
 A company has a website that sells video games for different consoles. They would need a database for all their games and order places. For each order place, they would need games bought, total price, date of the order, and how long it will take to deliver. The database needs to keep track of all games that are being sold. Customers will have to input their information when registering an account. Customers will also have to input their card details when making a payment for their order. 
-4.2	Business Reporting Requirements
+5.2	Business Reporting Requirements
 Substitute in here the information the users of your application will want to be able to view.
 1.	Organisers need to be able to create, read, update, and delete: festivals, stages, shows, performers, and genres.
 2.	Users will need to be able to find all festivals ordered by their start date.
@@ -192,7 +225,7 @@ Substitute in here the information the users of your application will want to be
 11.	Organisers need to display a list of employees that are assigned to a specific festival
 
 
-4.3	Textual Representation of Data-Set
+5.3	Textual Representation of Data-Set
 Substitute in here the tables for your database
 
 FESTIVAL (title, description, latitude, longitude, city, start_date, end_date, image_id)
@@ -205,7 +238,7 @@ GENRE_PERFORMER (id, genre_id, performer_id)
 EMPLOYEE (name, phone, email)
 FESTIVAL_EMPLOYEE (employee_id, festival_id, role)
  
-4.4	Business Rules
+5.4	Business Rules
 Substitute in here the business rules for your database
 •      A Festival has many Stages.
 •      A Stage belongs to one Festival.
@@ -222,10 +255,10 @@ Substitute in here the business rules for your database
 •      A Festival can have many Employees associated with it
 •      An Employee can be assigned to one Festival at a time
 
-4.5	Entity Relationship Diagram
+5.5	Entity Relationship Diagram
 Substitute in here your ERD from draw.io
  
-4.6	Tables
+5.6	Tables
 Substitute in here your tables and the relationships between tables from draw.io in the format you used in DBMS with Mohammed.
 
 
@@ -235,7 +268,7 @@ Substitute in here your tables and the relationships between tables from draw.io
 
  
 
-4.7	Database Dictionary
+5.7	Database Dictionary
 
 Table	Attribute	Datatype	Range	Required	PK/FK	FK Ref Table
 						
@@ -245,23 +278,23 @@ Table	Attribute	Datatype	Range	Required	PK/FK	FK Ref Table
 						
 
  
-5	System Design/ Architecture Overview 
-5.1	Introduction
+6	System Design/ Architecture Overview 
+6.1	Introduction
 This section will describe the internal functionality of the web framework that you have chosed for the implementation. Add further sections if required by the specification of your web application
-5.2	Model View Controller
+6.2	Model View Controller
 Explain the follows a model-view-controller design pattern and how it is implemented in your web application. 
-5.3	User Authenticaion
+6.3	User Authenticaion
 Explain how user authentication is implemented in the web application framework.
-5.4	Routing
+6.4	Routing
 Describe the routes that were defined in the web application
-5.5	Templating
+6.5	Templating
 Describe the templating engine and how it was used to configure/ style the web application.
 
 Add a sequence diagram in this section and other diagrams that illustrate the architecture clearly.
  
 
-6	Testing 
-6.1	Introduction
+7	Testing 
+7.1	Introduction
 
 This chapter describes the testing that has been undertaken for the application. This chapter is presented in two sections:
 
@@ -273,7 +306,7 @@ Functional testing is a type of software testing whereby the system is tested ag
 User testing looks to see if a piece of software is easy and intuitive for the user.
 
 
-6.2	Functional Testing
+7.2	Functional Testing
 
 This section describes the functional tests which were carried out on the app.  These functional tests can be categorised as: (whatever is relevant to your app)
 
@@ -285,28 +318,28 @@ CRUD
 Functional testing generally uses a Black Box Testing technique which means that the internal logic of the system being tested is not of interest to the tester.  The tester is only interested in whether the actual output agrees with the expected output.
 
 
-6.2.1	Login/Registration
+7.2.1	Login/Registration
 
 Test No	Description of test case	Input	Expected Output	Actual Output	Comment
 					
 					
 					
 
-6.2.2	Navigation
+7.2.2	Navigation
 
 Test No	Description of test case	Input	Expected Output	Actual Output	Comment
 					
 					
 					
 
-6.2.3	Calculation
+7.2.3	Calculation
 
 Test No	Description of test case	Input	Expected Output	Actual Output	Comment
 					
 					
 					
 
-6.2.4	CRUD 
+7.2.4	CRUD 
 
 Test No	Description of test case	Input	Expected Output	Actual Output	Comment
 					
@@ -315,79 +348,79 @@ Test No	Description of test case	Input	Expected Output	Actual Output	Comment
 
 
 
-6.3	Discussion of Functional Testing Results
+7.3	Discussion of Functional Testing Results
 Describe the results from the tests. Address any functionality where unexpected behavior could not be debugged.
 
-6.4	User Testing
+7.4	User Testing
 
 
-6.5	Conclusion
+7.5	Conclusion
 Discussion of test results. 
-7	Project Management
+8	Project Management
 
-7.1	Introduction
+8.1	Introduction
 
 This chapter describes how the project was managed.  It shows the phases of the project, going from the project idea through the requirements gathering, the specification for the project, the design, implementation and testing phases for the project.  It also discusses GitHub as a tool which assist in project management.
 
 
-7.2	Project Phases
+8.2	Project Phases
 
 In this section, describe each of the following project phases.  Explain any issues which arose for each of the phases.
 
-7.2.1	Requirements 
+8.2.1	Requirements 
 
 
-7.2.2	Design
+8.2.2	Design
 
 
-7.2.3	Implementation 
+8.2.3	Implementation 
 
 
-7.2.4	Testing
+8.2.4	Testing
 
 
 
-7.3	SCRUM Methodology
+8.3	SCRUM Methodology
 
 Sprints
 
 
-7.4	Project Management Tools
+8.4	Project Management Tools
 
-7.4.1	Github Project
+8.4.1	Github Project
 Description
 Include screen shots
 How it worked in practice
 
-7.4.2	GitHub
+8.4.2	GitHub
 Description
 How it is used
 How it worked in practice
 
  
-8	Reflection
+9	Reflection
 
-8.1	Your views on the project 
+9.1	Your views on the project 
 Describe how you feel the project went from your perspective.  
 
-8.2	How could the project could be developed further?
+9.2	How could the project could be developed further?
 
-8.3	Assessment of your learning.
+9.3	Assessment of your learning.
 Critically assess your learning. List what skills and competencies you have learned developed in this Continuous Assessment. 
 
 List which part of the project would need further development and itemize where you feel you have not satisfactorily completed the continuous assessment. 
 
-8.4	Completing a large software development project 
+9.4	Completing a large software development project 
 Describe what you have learnt from the project, from the point of view of completing a large software development project.
 
-8.5	Technical skills 
+9.5	Technical skills 
 Describe what you have learnt from the project, from a technical skills viewpoint.
 
-8.6	Further competencies and skills  
+9.6	Further competencies and skills  
 Describe any extra competencies and skills that would help you with your development in the work place.
  
 
-9	References
+10	References
 Add a list of references that you used to complete the project. 
 The Department of Technology and Psychology in IADT uses APA 7th referencing style.
 Use alphabetical order for your references.
