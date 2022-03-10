@@ -12,18 +12,18 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-sd">
-        <div class="container">
-            <a class="navbar-brand">Navbar</a>
+    <nav class="navbar navbar-light bg-white">
+        <div class="container d-flex justify-content-between">
+            <a class="navbar-brand">LOGO</a>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success " type="submit">Search</button>
-                <button class="btn btn-outline-success mx-5 " type="submit">Search</button>
+            
             </form>
         </div>
     </nav>
 
-    <div class="container-fluid bg-primary">
+    <div class="container bg-primary">
         <nav class="navbar navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">Gloves</a>
@@ -39,11 +39,16 @@
     </nav>
 
     <div class="container-fluid">
-      <img src= "/img/muaybanner.jpg" style="max-width:64%" class="rounded mx-auto d-block img-fluid" alt="Responsive Image">
+      <img src= "/img/muaybanner.jpg" class="rounded mx-auto d-block img-fluid" alt="Responsive Image">
       </div>
 
-    
- 
+      <div class="container-fluid">
+    <div class="row my-5 d-flex px-5">
+        <div class="col-6 d-flex mx-5 px-5 fs-2">
+        <p class="">New Items</p>
+        </div>
+    </div>
+      </div>
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
