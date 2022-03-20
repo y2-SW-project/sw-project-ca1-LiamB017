@@ -14,13 +14,21 @@
 <body>
     <nav class="navbar navbar-light bg-white">
         <div class="container d-flex justify-content-between">
+            <div class="col-4">
             <a class="navbar-brand">LOGO</a>
+</div>
+   <div class="col-6">
+
             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success " type="submit">Search</button>
+                <input class="form-control form-control-lg me-3" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn  btn-outline-success px-1 " type="submit">Search</button>
+                </div>
+              
             
             </form>
-        </div>
+            <a href="{{ route('login') }}" class="btn btn-primary btn-md">Log In</button></a>
+            
+        
     </nav>
 
     <div class="container bg-primary">
