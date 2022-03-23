@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-white">
+    <nav class="navbar navbar-light bg-sd">
         <div class="container d-flex justify-content-between">
             <div class="col-4">
             <a class="navbar-brand">LOGO</a>
@@ -47,7 +47,7 @@
     </nav>
 
     <div class="container-fluid">
-      <img src= "/img/muaybanner.jpg" class="rounded mx-auto d-block img-fluid" alt="Responsive Image">
+
       </div>
 
       <div class="container-fluid">
@@ -59,8 +59,6 @@
       </div>
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css%22%3E
-    integrity=" sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3 crossorigin="anonymous">
+
 
 </html>

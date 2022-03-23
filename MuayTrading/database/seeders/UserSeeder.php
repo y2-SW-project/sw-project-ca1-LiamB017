@@ -29,12 +29,12 @@ class UserSeeder extends Seeder
      // This user is given the admin role 
       $admin->roles()->attach($role_admin);
 
-      $admin = new User();
-      $admin->name = 'John Haggerty';
-      $admin->email = 'jhaggerty@gmail.com';
-      $admin->password = Hash::make('password');
-      $admin->save();
+      $user = new User();
+      $user->name = 'John Haggerty';
+      $user->email = 'jhaggerty@gmail.com';
+      $user->password = Hash::make('password');
+      $user->save();
      // this user is given the user role
-      $admin->roles()->attach($role_user);
+      $user->roles()->attach($role_user);
     }
 }
