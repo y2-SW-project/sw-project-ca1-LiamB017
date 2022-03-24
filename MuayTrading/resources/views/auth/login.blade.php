@@ -1,4 +1,8 @@
+
+
+
 @extends('layouts.app')
+
 
 @section('content')
 <div class="container">
@@ -51,7 +55,7 @@
                             </div>
                         </div>
 
-                        <div class="row mb-0">
+                        <div class="row mb-3">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
@@ -64,6 +68,17 @@
                                 @endif
                             </div>
                         </div>
+                        <div class="row mb-0 ">
+                            <div class="col-md-8 offset-md-4">
+                            <a href="{{ route('register') }}" class="btn btn-primary btn-md ">Register</button></a>
+
+                                @if (Route::has('register'))
+                                    <a class="btn btn-link" href="{{ route('register') }}">
+                                        {{ __('New to MuayTrading?') }}
+                                    </a>
+                                @endif
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -71,3 +86,19 @@
     </div>
 </div>
 @endsection
+
+
+<!-- <div class="container">
+
+<div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+</div> -->
