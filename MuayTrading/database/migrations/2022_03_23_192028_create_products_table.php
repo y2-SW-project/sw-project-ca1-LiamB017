@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->string('brand');
             $table->string('condition');
             $table->float('price');
+            $table->date('date_added');
             $table->timestamps();
         });
     }

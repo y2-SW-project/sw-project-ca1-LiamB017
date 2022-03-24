@@ -55,8 +55,8 @@
 
       <div class="container-fluid">
     <div class="row my-5 d-flex px-5 mx-5">
-        <div class="col-6 d-flex mx-5 px-5 fs-3">
-        <p class="">Buy.Sell.  <br>Premium Muay Thai training gear. </p>
+        <div class="col-6 d-flex mx-5 px-5 ">
+        <p class="font-weight-bold fs-2">Buy.Sell.  <br>Premium Muay Thai training gear. </p>
         
         </div>
         <div class="container-fluid">
