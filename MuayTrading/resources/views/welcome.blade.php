@@ -54,11 +54,26 @@
       </div>
 
       <div class="container-fluid">
-    <div class="row my-5 d-flex px-5 mx-5">
-        <div class="col-6 d-flex mx-5 px-5 ">
-        <p class="font-weight-bold fs-2">Buy.Sell.  <br>Premium Muay Thai training gear. </p>
+    <div class="row my-5 d-flex px-5 mx-5 ">
+        <div class="col-6 d-flex mx-5  ">
+        <p class="font-weight-bold mx-5 fs-2">Buy.Sell.  <br>Premium Muay Thai training gear. </p>
+
+
         
         </div>
+        <div class="col-6 d-flex mx-5  ">
+        <p class="mx-5 fs-4">  MuayTrading is a brand new shop site for lovers of Muay Thai, no matter age or level.
+         MuayTrading allows users to view, buy and sell Muay Thai gear. MuayTrading's goal is to unite Muay Thai community and provide
+        an alternative option when buying gear, without sacrificing the quality.</p>
+
+
+        
+        </div>
+
+        <div class="col-md-6 offset-md-0 mx-5 px-5   mt-2 d-flex  ">
+        <a href="{{ route('login') }}" class="btn btn-primary btn-lg mx-2">Get Started</button></a>
+        </div>
+
         <div class="container-fluid">
         <!-- <img src= "/img/muaybanner.jpg" style="max-width:100%" class="rounded mx-auto d-block img-fluid" alt="Responsive Image"> -->
         </div>
