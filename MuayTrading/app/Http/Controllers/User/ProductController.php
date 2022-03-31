@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -21,8 +21,8 @@ class ProductController extends Controller
         // Return movie data 
         // Place all the returned movies into a movie argument, which is passed into the view
         $products = Product::all();
-        return view('admin.products.index', [
-            '[products]' => $products
+        return view('user.products.index', [
+            'products' => $products
         ]);
     }
 
@@ -82,7 +82,7 @@ class ProductController extends Controller
         // Get the product from the database, load the show view and pass in the product
         $product = Product::findOrFail($id);
 
-        return view('admin.products.show' , [
+        return view('user.products.show' , [
             'product' => $product
         ]);
     }
