@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -20,8 +20,12 @@ class CreateProductsTable extends Migration
             $table->string('gear_type');
             $table->string('brand');
             $table->string('condition');
-            $table->float('price');
+            $table->decimal('price');
             $table->date('date_added');
+            $table->foreign('brand_id')->references('id')->on('brands');
+            $table->foreign('type_id')->references('id')->on('types');
+            $table->foreign('condition_id')->references('id')->on('conditions');
+      
             $table->timestamps();
         });
     }
@@ -35,4 +39,4 @@ class CreateProductsTable extends Migration
     {
         Schema::dropIfExists('products');
     }
-}
+} 

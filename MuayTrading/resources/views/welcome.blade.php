@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-sd">
+    <nav class="navbar navbar-light bg-secondary">
         <div class="container d-flex justify-content-around mt-3">
             <div class="row"></div>
             <div class="col-4">
@@ -29,7 +29,7 @@
               
             
             </form>
-            <a href="{{ route('login') }}" class="btn btn-primary btn-md">Log In/Register</button></a>
+            <a href="{{ route('login') }}" class="btn btn-danger btn-md">Log In/Register</button></a>
             
         
     </nav>
@@ -54,15 +54,19 @@
       </div>
 
       <div class="container-fluid">
-    <div class="row my-5 d-flex px-5 mx-5 ">
-        <div class="col-6 d-flex mx-5  ">
-        <p class="font-weight-bold mx-5 fs-2">Buy.Sell.  <br>Premium Muay Thai training gear. </p>
-
+    <div class="row no-gutters  mt-5 d-flex  display-inline justify-content-center ">
+        <div class="col-4">
+        <div class="col-4 d-flex mx-5 fs-4 display-inline  ">
+        <p class="font-weight-bold  fs-3">Buy + Sell   </p>
+</div>
+<div class="col-8 d-flex mx-5 display-inline  ">
+        <p class="font-weight-bold fs-3">High Quality Muay Thai Gear</p>
+        
 
         
         </div>
-        <div class="col-6 d-flex mx-5  ">
-        <p class="mx-5 fs-4">  MuayTrading is a brand new shop site for lovers of Muay Thai, no matter age or level.
+        <div class="col-12 mt-3    ">
+        <p class="mx-5 fs-5">  MuayTrading is a brand new shop site for lovers of Muay Thai, no matter age or level.
          MuayTrading allows users to view, buy and sell Muay Thai gear. MuayTrading's goal is to unite Muay Thai community and provide
         an alternative option when buying gear, without sacrificing the quality.</p>
 
@@ -70,14 +74,23 @@
         
         </div>
 
-        <div class="col-md-6 offset-md-0 mx-5 px-5   mt-2 d-flex  ">
+        <div class="col-md-6 offset-md-0 px-5   mt-5 d-flex  ">
         <a href="{{ route('login') }}" class="btn btn-primary btn-lg mx-2">Get Started</button></a>
         </div>
-
-        <div class="container-fluid">
-        <!-- <img src= "/img/muaybanner.jpg" style="max-width:100%" class="rounded mx-auto d-block img-fluid" alt="Responsive Image"> -->
         </div>
+       <div class="col-4 ">
+         <img src= "/img/muaybanner.jpg" style="max-width:100%" class="rounded  d-block img-fluid" alt="Responsive Image"> 
+         </div>
     </div>
+      </div>
+      <div class="container mt-5">
+          <div class="row mt-2">
+              <div class="col-md-6 offset-md-0 mx-5  fs-3 d-flex">
+                  <p class="class px-4">
+                      Featured Items
+                  </p>
+              </div>
+          </div>
       </div>
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
