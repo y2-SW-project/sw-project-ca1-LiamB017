@@ -13,8 +13,10 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
+              
                  You are logged in as admin
+                 <a href="{{ route('login') }}" class="btn btn-danger btn-md">Sell</button></a>
+                 <a href="{{ route('login') }}" class="btn btn-danger btn-md">Browse</button></a>
                 </div>
             </div>
         </div>
