@@ -37,6 +37,7 @@ using the view button, this button uses the route user.products.show -->
         <td>{{ $product->brand_id}}</td>
         <td>{{ $product->type->title}}</td>
         <td>{{ $product->condition_id}}</td>
+        <td><img src="{{ $product->image->filename }}"></td>
 
         <td>
             <a href="{{ route('user.products.show', $product->id) }}" class="btn btn-primary">View</a>
