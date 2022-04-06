@@ -14,7 +14,9 @@
                         </div>
                     @endif
 
-                 You are logged in as user
+                 You are logged in as a user!
+               <br>
+                 <a href="{{ route('user.products.index') }}" class="btn btn-danger btn-md mt-3">Start Browsing</button></a>
                 </div>
             </div>
         </div>

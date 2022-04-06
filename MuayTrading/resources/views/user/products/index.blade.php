@@ -25,7 +25,7 @@ using the view button, this button uses the route user.products.show -->
                               <th>Brand</th>
                               <th>Type</th>
                               <th>Condition</th>
-                              <th></th>
+                         
 </thead>
 <tbody>
     @foreach ($products as $product)
@@ -34,16 +34,19 @@ using the view button, this button uses the route user.products.show -->
         <td>{{ $product->description}}</td>
         <td>{{ $product->price}}</td>
         <td>{{ $product->date_added}}</td>
-        <td>{{ $product->brand_id}}</td>
+        <td>{{ $product->brand->title}}</td>
+        <td>{{ $product->condition->title}}</td>
         <td>{{ $product->type->title}}</td>
-        <td>{{ $product->condition_id}}</td>
-        <td><img src="{{ $product->image->filename }}"></td>
-
+        <td>
+        <img src= "{{ asset('/storage/images/product_01.jpg')}}"  class="w-25 rounded  d-block img-fluid" alt="Responsive Image"> 
+       
+        </td>
         <td>
             <a href="{{ route('user.products.show', $product->id) }}" class="btn btn-primary">View</a>
 </form>
 </td>
 </tr>
+
 @endforeach
 </tbody>
 </table>

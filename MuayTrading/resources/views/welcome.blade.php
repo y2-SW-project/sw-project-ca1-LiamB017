@@ -49,9 +49,6 @@
     </div>
     </nav>
 
-    <div class="container-fluid">
-
-      </div>
 
       <div class="container-fluid">
     <div class="row no-gutters  mt-5 d-flex  display-inline justify-content-center ">
@@ -75,7 +72,7 @@
         </div>
 
         <div class="col-md-6 offset-md-0 px-5   mt-5 d-flex  ">
-        <a href="{{ route('login') }}" class="btn btn-primary btn-lg mx-2">Get Started</button></a>
+        <a href="{{ route('login') }}" class="btn btn-danger btn-lg mx-2">Get Started</button></a>
         </div>
         </div>
        <div class="col-4 ">
@@ -83,15 +80,97 @@
          </div>
     </div>
       </div>
-      <div class="container mt-5">
-          <div class="row mt-2">
-              <div class="col-md-6 offset-md-0 mx-5  fs-3 d-flex">
-                  <p class="class px-4">
-                      Featured Items
-                  </p>
-              </div>
-          </div>
+
+      <div class="container-fluid mt-5">
+      <div class="row mt-5 d-flex  ">
+       <div class="col-md-4 offset-md-2">
+           <p class="class mx-5 font-weight-bold fs-3">JOIN NOW</p>
+       </div>
+
       </div>
+      <div class="row mt-5 offset-md-2">
+
+  <div class="col-md-4">
+  <div class="card" style="width: 18rem;" class= "rounded">
+  <div class="card-body">
+  <i class="bi bi-cash "></i>
+    <h5 class="card-title offset-md-6 h4 strong ">Card title</h5>
+ 
+    <p class="card-text h5 mt-4 mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link mt-1 strong font-weight-bold h5">Read More</a>
+ 
+  </div>
+</div>
+  </div>
+
+  <div class="col-md-4">
+  <div class="card" style="width: 18rem;" class= "rounded">
+  <div class="card-body">
+  <i class="bi bi-cash "></i>
+    <h5 class="card-title offset-md-6 h4 strong ">Card title</h5>
+ 
+    <p class="card-text h5 mt-4 mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link mt-1 strong font-weight-bold h5">Read More</a>
+ 
+  </div>
+</div>
+  </div>
+
+  <div class="col-md-4">
+  <div class="card" style="width: 18rem;" class= "rounded">
+  <div class="card-body">
+  <i class="bi bi-cash "></i>
+    <h5 class="card-title offset-md-6 h4 strong ">Card title</h5>
+ 
+    <p class="card-text h5 mt-4 mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link mt-1 strong font-weight-bold h5">Read More</a>
+ 
+  </div>
+</div>
+  </div>
+</div>
+
+      </div>
+
+   
+        <!-- This is the footer -->
+
+      <div class="mt-5 pt-5 pb-5 footer">
+<div class="container bg-secondary p-4">
+  <div class="row">
+    <div class="col-lg-5 col-xs-12 about-company">
+      <h2>Heading</h2>
+      <p class="pr-5 text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
+      <p><a href="#"><i class="fa fa-facebook-square mr-1 tex-black"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+    </div>
+    <div class="col-lg-3 col-xs-12 links">
+      <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+        <ul class="m-0 p-0">
+          <li>- <a href="#">Lorem ipsum</a></li>
+          <li>- <a href="#">Nam mauris velit</a></li>
+          <li>- <a href="#">Etiam vitae mauris</a></li>
+          <li>- <a href="#">Fusce scelerisque</a></li>
+          <li>- <a href="#">Sed faucibus</a></li>
+          <li>- <a href="#">Mauris efficitur nulla</a></li>
+        </ul>
+    </div>
+    <div class="col-lg-4 col-xs-12 location">
+      <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+      <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+      <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+      <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col copyright">
+      <p class=""><small class="text-black-50">© 2019. All Rights Reserved.</small></p>
+    </div>
+  </div>
+</div>
+</div>
+|</div>
+</div>
+      
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 

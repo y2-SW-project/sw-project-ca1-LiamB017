@@ -9,7 +9,7 @@ movie to the database and allows it to be displayed on the index page once submi
       <div class="col-md-8 col-md-offset-2">
         <div class="card">
           <div class="card-header">
-            Add new Movie
+            Add new Product
           </div>
           <div class="card-body">
           <!-- this block is ran if the validation code in the controller fails
@@ -23,19 +23,19 @@ movie to the database and allows it to be displayed on the index page once submi
                 </ul>
               </div>
             @endif
-            <form method="POST" action="{{ route('admin.movies.store')  }}">
+            <form method="POST" action="{{ route('admin.products.store')  }}">
               <input type="hidden" name="_token" value="{{  csrf_token()  }}">
               <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" class="form-control" id="title" name="title" value="{{ old('title') }}" />
               </div>
               <div class="form-group">
-                <label for="description">Genre</label>
-                <input type="text" class="form-control" id="genre" name="genre" value="{{ old('genre') }}" />
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="description" name="description" value="{{ old('description') }}" />
               </div>
               <div class="form-group">
-                <label for="release_year">Relase</label>
-                <input type="date" class="form-control" id="release_year" name="release_year" value="{{ old('release_year') }}" />
+                <label for="release_year">Price</label>
+                <input type="text" class="form-control" id="price" name="price" value="{{ old('price') }}" />
               </div>
               <div class="form-group">
                 <label for="start_date"> Description</label>
@@ -55,7 +55,7 @@ movie to the database and allows it to be displayed on the index page once submi
               </div>
               
 
-              <a href="{{ route('admin.movies.index') }}" class="btn btn-outline">Cancel</a>
+              <a href="{{ route('admin.products.index') }}" class="btn btn-outline">Cancel</a>
               <button type="submit" class="btn btn-primary float-right">Submit</button>
             </form>
           </div>

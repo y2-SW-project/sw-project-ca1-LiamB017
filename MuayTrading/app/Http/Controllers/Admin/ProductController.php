@@ -17,9 +17,9 @@ class ProductController extends Controller
         // 
     public function index()
     {
-        // Use the Movie model
-        // Return movie data 
-        // Place all the returned movies into a movie argument, which is passed into the view
+        // Use the product model
+        // Return product data 
+        // Place all the returned products into a product argument, which is passed into the view
         $products = Product::all();
         return view('admin.products.index', [
             '[products]' => $products
@@ -44,7 +44,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //The Movie that is created will be stored in the database when the user clicks submit
+        //The product that is created will be stored in the database when the user clicks submit
         $request->validate([
             'title' => 'required',
             'description' =>'required|max:25',
@@ -56,8 +56,8 @@ class ProductController extends Controller
             
         ]);
 
-        // if validation passes create the new movie
-        $movie = new Product();
+        // if validation passes create the new product
+        $product = new Product();
         $product->title = $request->input('title');
         $product->description = $request->input('description');
         $product->price = $request->input('price');
@@ -95,10 +95,10 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-   // get the movie by ID from the Database
+   // get the product by ID from the Database
    $product = Product::findOrFail($id);
 
-   // Load the edit view and pass the movie into
+   // Load the edit view and pass the product into
    // that view
    return view('admin.products.edit', [
        'product' => $product
@@ -114,8 +114,8 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-       // first get the existing movie that the user is updating
-       $movie = Movie::findOrFail($id);
+       // first get the existing product that the user is updating
+       $product = Product::findOrFail($id);
        $request->validate([
         'title' => 'required',
         'genre' =>'required|max:25',
@@ -127,12 +127,12 @@ class ProductController extends Controller
         
        ]);
 
-       // if validation passes then update existing movie
-       $movie->title = $request->input('title');
-        $movie->genre = $request->input('genre');
-        $movie->release_year = $request->input('release_year');
-        $movie->description = $request->input('description');
-        $movie->director = $request->input('director');
+       // if validation passes then update existing product
+       $product->title = $request->input('title');
+        $product->genre = $request->input('genre');
+        $product->release_year = $request->input('release_year');
+        $product->description = $request->input('description');
+        $product->director = $request->input('director');
         $product->age_rating = $request->input('age_rating');
         $product->run_time = $request->input('run_time');
         $product->save();
@@ -153,7 +153,7 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
         $product->delete();
 
-         return redirect()->route('admin.movies.index');
+         return redirect()->route('admin.products.index');
         
     }
 }
