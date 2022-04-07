@@ -25,7 +25,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::get('/admin/products/', [AdminProductController::class, 'index'])->name('admin.products.index');
-Route::get('admin/products/create', [AdminProductController::class, 'create'])->name('admin.create');
+Route::get('/admin/products/create', [AdminProductController::class, 'create'])->name('admin.products.create');
 Route::get('/admin/Products/{id}', [AdminProductController::class, 'show'])->name('admin.products.show');
 Route::post('admin/Products/store', [AdminProductController::class, 'store'])->name('admin.products.store');
 Route::get('/admin/Products{id}edit', [AdminProductController::class, 'edit'])->name('admin.products.edit');

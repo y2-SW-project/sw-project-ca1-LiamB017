@@ -34,24 +34,28 @@ movie to the database and allows it to be displayed on the index page once submi
                 <input type="text" class="form-control" id="description" name="description" value="{{ old('description') }}" />
               </div>
               <div class="form-group">
-                <label for="release_year">Price</label>
+                <label for="price">Price</label>
                 <input type="text" class="form-control" id="price" name="price" value="{{ old('price') }}" />
               </div>
               <div class="form-group">
-                <label for="start_date"> Description</label>
-                <input type="text" class="form-control" id="description" name="description" value="{{ old('description') }}" />
+                <label for="date_added"> Date Added</label>
+                <input type="date" class="form-control" id="date_added" name="date_added" value="{{ old('date_added') }}" />
               </div>
               <div class="form-group">
-                <label for="director">Director</label>
-                <input type="text" class="form-control" id="director" name="director" value="{{ old('director') }}" />
+                <label for="brand_id">Brand</label>
+                <input type="text" class="form-control" id="brand_id" name="brand_id" value="{{ old('brand_id') }}" />
               </div>
               <div class="form-group">
-                <label for="age_rating">Age Rating</label>
-                <input type="text" class="form-control" id="age_rating" name="age_rating" value="{{ old('age_rating') }}" />
+                <label for="type_id">Type</label>
+                <input type="text" class="form-control" id="type_id" name="type_id" value="{{ old('type_id') }}" />
               </div>
               <div class="form-group">
-                <label for="run_time">Runtime</label>
-                <input type="text" class="form-control" id="run_time" name="run_time" value="{{ old('run_time') }}" />
+                <label for="condition_id">Condition</label>
+                <input type="text" class="form-control" id="condition_id" name="condition_id" value="{{ old('condition_id') }}" />
+              </div>
+              <div class="form-group">
+                <label for="image_id">Image</label>
+                <input type="text" class="form-control" id="image_id" name="image_id" value="{{ old('image_id') }}" />
               </div>
               
 
