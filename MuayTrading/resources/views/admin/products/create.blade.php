@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.logout')
 
 <!-- This is the view in which users may add a new movie, admin.movies.store saves the 
 movie to the database and allows it to be displayed on the index page once submitted -->
@@ -52,6 +52,7 @@ movie to the database and allows it to be displayed on the index page once submi
               <div class="form-group">
                 <label for="condition_id">Condition</label>
                 <input type="text" class="form-control" id="condition_id" name="condition_id" value="{{ old('condition_id') }}" />
+               
               </div>
               <div class="form-group">
                 <label for="image_id">Image</label>

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.logout')
 
 <!-- Users may edit an already existing product in the database, admin.products.update is used to
 save the changes made to a product -->

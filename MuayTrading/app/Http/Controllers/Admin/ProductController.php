@@ -22,7 +22,7 @@ class ProductController extends Controller
         // Place all the returned products into a product argument, which is passed into the view
         $products = Product::all();
         return view('admin.products.index', [
-            '[products]' => $products
+            'products' => $products
         ]);
     }
 
@@ -48,11 +48,12 @@ class ProductController extends Controller
         $request->validate([
             'title' => 'required',
             'description' =>'required|max:25',
-            'price' =>'required|decimal|digits:5',
+            'price' =>'required|max:25',
             'date_added' =>'required|date|after:today',
             'brand_id' =>'required|integer|digits:1',
             'type_id' =>'required|integer|digits:1',
             'condition_id' => 'required|integer|digits:1',
+            'image_id' => 'required|integer|digits:1',
             
         ]);
 
@@ -65,6 +66,7 @@ class ProductController extends Controller
         $product->brand_id = $request->input('brand_id');
         $product->type_id = $request->input('type_id');
         $product->condition_id = $request->input('condition_id');
+        $product->image_id = $request->input('image_id');
         $product->save();
 
         // Once new product is created, redirect to display all products

@@ -7,11 +7,12 @@ $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 
-$primary: #f91723;
+$primary: #e02c3c;
 
 .btn {
     color: #FFFFFF;
-    background-color: #f91723;
+    background-color: #e02c3c;
+    font-weight: 400;
 }
 
 $secondary: #ececec;
@@ -19,4 +20,5 @@ $secondary: #ececec;
 .homecardwidth {
      width: 17.8rem;
 }
+
 

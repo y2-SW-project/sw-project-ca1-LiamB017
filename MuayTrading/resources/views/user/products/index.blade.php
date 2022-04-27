@@ -8,8 +8,7 @@ using the view button, this button uses the route user.products.show -->
     <div class="row ">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Products
-                    
+                <div class="card-header">Products                   
                 </div>
 
                 <div class="card-body">
@@ -23,8 +22,9 @@ using the view button, this button uses the route user.products.show -->
                               <th>Price</th>
                               <th>Date Added</th>
                               <th>Brand</th>
-                              <th>Type</th>
                               <th>Condition</th>
+                              <th>Type</th>
+                             
                          
 </thead>
 <tbody>
@@ -43,14 +43,9 @@ using the view button, this button uses the route user.products.show -->
         </td>
         <td>
             <a href="{{ route('user.products.show', $product->id) }}" class="btn btn-primary">View</a>
-            
-        <a href="{{ route('admin.products.edit', $product->id) }}" class="btn btn-warning">Edit</a>
+       
 
-        <form style="display:inline-" method="POST" action="{{ route('admin.products.destroy', $product->id) }}">
-   <input type="hidden" name="_method" value="DELETE">
-   <input type="hidden" name="_token" value="{{ csrf_token() }}">
-   <button type="submit" class="form-control btn btn-danger">Delete</a>
-</form>
+    
 
 </form>
 </td>

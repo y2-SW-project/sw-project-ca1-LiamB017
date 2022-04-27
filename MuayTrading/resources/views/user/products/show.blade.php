@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.logout')
 
 <!-- This view shows a previously selected product individually, along with all of it's info -->
 

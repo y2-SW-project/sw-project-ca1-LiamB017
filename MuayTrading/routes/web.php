@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User\ProductController as UserProductController;
-use App\Http\Controllers\User\ProductController as AdminProductController;
+use App\Http\Controllers\Admin\ProductController as AdminProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,4 +38,4 @@ Route::get('/user/products/{id}', [UserProductController::class, 'show'])->name(
 Route::get('admin/home', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin.home');
 Route::get('user/home', [App\Http\Controllers\User\HomeController::class, 'index'])->name('user.home');
 
-
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
