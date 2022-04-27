@@ -44,11 +44,11 @@ using the view button, this button uses the route user.products.show -->
         </td>
         <td>
             <a href="{{ route('admin.products.show', $product->id) }}" class="btn btn-primary">View</a>
-            <a href="{{ route('admin.products.edit', $product->id) }}" class="btn btn-warning">Edit</a>
+            <a href="{{ route('admin.products.edit', $product->id) }}" class="btn btn-primary mt-3">Edit</a>
    <form style="display:inline-" method="POST" action="{{ route('admin.products.destroy', $product->id) }}">
    <input type="hidden" name="_method" value="DELETE">
    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-   <button type="submit" class="form-control btn btn-danger">Delete</a>
+   <button type="submit" class="form-control btn btn-danger mt-3">Delete</a>
 </form>
        
 

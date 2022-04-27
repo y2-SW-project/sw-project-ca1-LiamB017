@@ -94,8 +94,9 @@
   <div class="card" style="width: 18rem;" class= "rounded">
   <div class="card-body">
   <i class="bi bi-cash "></i>
-    <h5 class="card-title offset-md-6 h4 strong ">Card title</h5>
- 
+  <div class="div class bg-primary">
+    <h5 class="card-title offset-md-6 h4 strong  text-white display-8">Card title</h5>
+    </div>
     <p class="card-text h5 mt-4 mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="card-link mt-1 strong font-weight-bold h5">Read More</a>
  
@@ -107,8 +108,9 @@
   <div class="card" style="width: 18rem;" class= "rounded">
   <div class="card-body">
   <i class="bi bi-cash "></i>
-    <h5 class="card-title offset-md-6 h4 strong ">Card title</h5>
- 
+  <div class="div class bg-primary">
+    <h5 class="card-title offset-md-6 h4 strong text-white display-8 ">Card title</h5>
+    </div>
     <p class="card-text h5 mt-4 mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="card-link mt-1 strong font-weight-bold h5">Read More</a>
  
@@ -120,7 +122,9 @@
   <div class="card" style="width: 18rem;" class= "rounded">
   <div class="card-body">
   <i class="bi bi-cash "></i>
-    <h5 class="card-title offset-md-6 h4 strong ">Card title</h5>
+  <div class="div class bg-primary">
+    <h5 class="card-title offset-md-6 h4 strong text-white display-8 ">Card title</h5>
+    </div>
  
     <p class="card-text h5 mt-4 mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="card-link mt-1 strong font-weight-bold h5">Read More</a>
