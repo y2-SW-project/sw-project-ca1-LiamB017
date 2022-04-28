@@ -38,7 +38,7 @@ using the view button, this button uses the route user.products.show -->
         <td>{{ $product->condition->title}}</td>
         <td>{{ $product->type->title}}</td>
         <td>
-        <img src= "{{ asset('/storage/images/product_01.jpg')}}"  class="w-25 rounded  d-block img-fluid" alt="Responsive Image"> 
+        <img src= "{{ asset('/storage/images/product_02.jpg')}}"  class="w-25 rounded  d-block img-fluid" alt="Responsive Image"> 
        
         </td>
         <td>
