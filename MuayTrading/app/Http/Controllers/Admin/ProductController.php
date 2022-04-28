@@ -120,24 +120,26 @@ class ProductController extends Controller
        $product = Product::findOrFail($id);
        $request->validate([
         'title' => 'required',
-        'genre' =>'required|max:25',
-        'release_year' =>'required|date|before:today',
-        'description' =>'required|max:500',
-        'director' =>'required|max:25',
-        'age_rating' =>'required|max:25',
-        'run_time' => 'required|max:25',
+        'description' =>'required|max:25',
+        'price' =>'required|max:25',
+        'date_added' =>'required|date|after:today',
+        'brand_id' =>'required|integer|digits:1',
+        'type_id' =>'required|integer|digits:1',
+        'condition_id' => 'required|integer|digits:1',
+        'image_id' => 'required|integer|digits:1',
         
        ]);
 
        // if validation passes then update existing product
        $product->title = $request->input('title');
-        $product->genre = $request->input('genre');
-        $product->release_year = $request->input('release_year');
-        $product->description = $request->input('description');
-        $product->director = $request->input('director');
-        $product->age_rating = $request->input('age_rating');
-        $product->run_time = $request->input('run_time');
-        $product->save();
+       $product->description = $request->input('description');
+       $product->price = $request->input('price');
+       $product->date_added = $request->input('date_added');
+       $product->brand_id = $request->input('brand_id');
+       $product->type_id = $request->input('type_id');
+       $product->condition_id = $request->input('condition_id');
+       $product->image_id = $request->input('image_id');
+       $product->save();
 
        return redirect()->route('admin.products.index');
     }
